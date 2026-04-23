@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipa de Projetos 2025/2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .call-to-action {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .call-to-action h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .call-to-action a:hover {
+            background-color: #ffb300;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .project-header {
+            padding: 20px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .project-icon {
+            font-size: 2em;
+            min-width: 40px;
+        }
+
+        .project-header h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        .project-description {
+            padding: 15px 20px;
+            font-size: 0.95em;
+            color: #666;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project-team {
+            padding: 15px 20px;
+        }
+
+        .team-member {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .team-member:last-child {
+            border-bottom: none;
+        }
+
+        .coordinator {
+            font-weight: 600;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .team-member.sub {
+            color: #666;
+            font-size: 0.95em;
+            padding-left: 16px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin: 40px 0 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🎯 Equipa de Projetos 2025/2026</h1>
+            <p>Coordenação e dinamização de projetos educativos e extracurriculares</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="call-to-action">
+            <h3>📢 Publicações e Divulgação</h3>
+            <p>Tem uma publicação para colocar na newsletter ou redes sociais? Partilhe na Drive dedicada.</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #666;"><strong>Importante:</strong> Leia obrigatoriamente o documento "Normas para as publicações" antes de adicionar conteúdos.</p>
+            <a href="https://drive.google.com/drive/folders/18NNCWvIik-Tz4ssEyS6k_cuBYK1U1ozx?usp=drive_link" target="_blank">Aceder à Drive (Media Bemposta)</a>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h3 style="color: #333; margin-bottom: 15px;">Siga-nos</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/aebemposta/" target="_blank" title="Facebook">f</a>
+                <a href="https://www.instagram.com/ae_bemposta/" target="_blank" title="Instagram">📷</a>
+                <a href="https://www.youtube.com/channel/UCNdbwv2vVgHiNt0VTlCdm_A" target="_blank" title="YouTube">▶</a>
+            </div>
+        </div>
+
+        <!-- Main Projects Section -->
+        <h2 class="section-title">Coordenação Geral</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">👩‍💼</div>
+                    <h3>Coordenadora</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">Helena Lourenço</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Erasmus+ -->
+        <h2 class="section-title">🌍 Erasmus+</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🇪🇺</div>
+                    <h3>Projeto Erasmus+</h3>
+                </div>
+                <div class="project-description">
+                    Programa de mobilidade e cooperação europeia focado em democracia e combate ao populismo, com parcerias em Itália e Alemanha (estudantes 17-18 anos).
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador(a):</div>
+                    <div class="team-member">Sandra Mendes</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Equipa:</div>
+                    <div class="team-member sub">Cidália Gonçalves</div>
+                    <div class="team-member sub">Sandra Tenil</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Capacitação Linguística:</div>
+                    <div class="team-member sub">Alexandra Rocha</div>
+                    <div class="team-member sub">Maria Conceição Oliveira</div>
+                    <div class="team-member sub">Marilina Santos</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📚</div>
+                    <h3>eTwinning</h3>
+                </div>
+                <div class="project-description">
+                    Plataforma de colaboração e trabalho em rede entre escolas europeias através de projetos educativos.
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadores:</div>
+                    <div class="team-member sub">Sílvia Martins</div>
+                    <div class="team-member sub">Cristina Sequeira</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clubes e Atividades -->
+        <h2 class="section-title">🎨 Clubes e Atividades Extracurriculares</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">♟</div>
+                    <h3>Clube de Xadrez</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Rafael Centeio</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🎨</div>
+                    <h3>Clube do Azulejo</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Jorge Dias</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🧮</div>
+                    <h3>Clube de Matemática</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadores:</div>
+                    <div class="team-member sub">Rita Torrado (Bemposta)</div>
+                    <div class="team-member sub">Lurdes Caetano (José Sobral)</div>
+                    <div class="team-member sub">Zélia Santos (D. João II)</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🤖</div>
+                    <h3>Clube de Robótica</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Eunice Maio</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🌱</div>
+                    <h3>Ciência Viva na Escola</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadores:</div>
+                    <div class="team-member sub">Graça Delicado</div>
+                    <div class="team-member sub">Eunice Maio</div>
+                    <div class="team-member sub">Sandra Bilo</div>
+                    <div class="team-member sub">Ana Enes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ambiente e Saúde -->
+        <h2 class="section-title">🌍 Ambiente, Saúde e Bem-estar</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🌿</div>
+                    <h3>Ecodelegados</h3>
+                </div>
+                <div class="project-description">
+                    Promoção de práticas sustentáveis e consciência ambiental na comunidade escolar.
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadores:</div>
+                    <div class="team-member sub">Sandra Silva</div>
+                    <div class="team-member sub">Filipe Soares</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">❤️</div>
+                    <h3>Educação para a Saúde (PES)</h3>
+                </div>
+                <div class="project-description">
+                    Programas e atividades focadas na promoção da saúde física e mental.
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member sub">Lurdes Caetano</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Equipa:</div>
+                    <div class="team-member sub">Ana Enes</div>
+                    <div class="team-member sub">Zélia Santos</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🧘</div>
+                    <h3>Mente Presente</h3>
+                </div>
+                <div class="project-description">
+                    Programa de bem-estar e mindfulness para a comunidade escolar.
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Sofia Apóstolo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">💚</div>
+                    <h3>Requalificação da Horta e Jardim</h3>
+                </div>
+                <div class="project-description">
+                    Projeto de manutenção e desenvolvimento de espaços verdes da Unidade de Multideficiência.
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadores:</div>
+                    <div class="team-member sub">Joel Nascimento</div>
+                    <div class="team-member sub">Berta Baptista</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educação e Comunidade -->
+        <h2 class="section-title">📚 Educação, Cultura e Comunidade</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🎓</div>
+                    <h3>Projeto OUSAR</h3>
+                </div>
+                <div class="project-description">
+                    Iniciativa de apoio e orientação para alunos do secundário nos cursos científico-humanísticos.
+                </div>
+                <div class="project-team">
+                    <div class="team-member" style="color: #666;">Docentes dos conselhos de turma do secundário dos cursos científico-humanístico</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏛</div>
+                    <h3>UNESCO</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Susana Fonseca</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🎭</div>
+                    <h3>Projeto Cultural de Escola</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Bruno Sousa</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📖</div>
+                    <h3>Bibliotecas Escolares</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member sub">Sandra Mendes</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Professora Bibliotecária:</div>
+                    <div class="team-member sub">Helena Lourenço</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">💰</div>
+                    <h3>Educação Financeira</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Cláudia Carlos</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Cidadania e Desenvolvimento</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Ana Fernandes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desporto -->
+        <h2 class="section-title">⚽ Desporto Escolar</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏅</div>
+                    <h3>Coordenação Geral</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Ana Fonseca</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏊</div>
+                    <h3>Natação e Canoagem</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member sub">Ana Raimundo (Natação)</div>
+                    <div class="team-member sub">Vítor Saramago (Natação)</div>
+                    <div class="team-member sub">José Vieira (Canoagem)</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏄</div>
+                    <h3>Surf</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Raquel Gonçalves</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">⛵</div>
+                    <h3>Vela</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Rui Filipe</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🎾</div>
+                    <h3>Ténis</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Plínio Ferrão</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏐</div>
+                    <h3>Voleibol</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member">Dina Silveira</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏀</div>
+                    <h3>Basquetebol</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">Rui Lopes</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏸</div>
+                    <h3>Badminton</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenador:</div>
+                    <div class="team-member">José Costa</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Suporte -->
+        <h2 class="section-title">🤝 Suporte e Serviços</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">👥</div>
+                    <h3>Serviço de Apoio ao Aluno</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member sub">Vanessa Sousa</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Equipa:</div>
+                    <div class="team-member sub">Fabiana Nunes</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📅</div>
+                    <h3>Plano Anual de Atividades</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member sub">Vera Rolo</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Equipa:</div>
+                    <div class="team-member sub">José Francisco Furtado</div>
+                    <div class="team-member sub">Manuel Silva</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📢</div>
+                    <h3>Equipa de Comunicação</h3>
+                </div>
+                <div class="project-team">
+                    <div class="team-member coordinator">📌 Coordenadora:</div>
+                    <div class="team-member sub">Alberta Dias</div>
+                    <div class="team-member coordinator" style="margin-top: 10px;">📌 Equipa:</div>
+                    <div class="team-member sub">Rafael Centeio</div>
+                    <div class="team-member sub">Rosa Duarte</div>
+                    <div class="team-member sub">Alda Martins</div>
+                    <div class="team-member sub">Manuel Silva</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segurança -->
+        <h2 class="section-title">🔒 Cibersegurança</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">⚠️</div>
+                    <h3>Combate ao Bullying</h3>
+                </div>
+                <div class="project-description">
+                    Programas e ações de prevenção e acompanhamento relacionados com bullying e cyberbullying.
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🛡️</div>
+                    <h3>eSafety Label</h3>
+                </div>
+                <div class="project-description">
+                    Selo de qualidade europeu que certifica boas práticas em segurança online nas escolas.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-note">
+            <p>📝 Página mantida por: <strong>Carlos Simão Ramos</strong></p>
+            <p style="margin-top: 10px; color: #bbb;">Última atualização: Abril 2026</p>
+        </div>
+    </div>
+</body>
+</html>
